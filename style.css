@@ -1,0 +1,791 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ebe3cd;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #12202f;
+  border-radius: 80px;
+}
+.logo {
+  text-transform: capitalize;
+  margin-left: 30px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin: 20px;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.sign-up {
+  margin-right: 30px;
+  color: #6bb99c;
+}
+
+/* hero section style */
+.hero {
+  width: 100%;
+  height: 650px;
+  display: flex;
+}
+.herotag {
+  width: 30%;
+}
+.heroimg {
+  width: 70%;
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
+.heroimg img {
+  width: 90%;
+  height: 700px;
+}
+.herospan {
+  display: none;
+}
+h1 {
+  font-size: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
+  margin-top: 100px;
+}
+h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
+p {
+  margin: 10px 0;
+  font-weight: bold;
+  line-height: 25px;
+}
+.explore {
+  width: 170px;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  background-color: #df581e;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.seemenu {
+  font-weight: bold;
+  background: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+}
+
+.availability {
+  width: 100%;
+  height: 100px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+.time {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  background-color: #ebe3cd;
+  border: 1px solid rgb(64, 54, 54);
+  border-radius: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+.check-seat {
+  display: flex;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #6bb99c;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+/* end of hero section */
+
+/* section categories */
+.categories {
+  text-align: center;
+  margin-top: 70px;
+}
+.categories h3 {
+  color: #eaa73b;
+}
+.categories h1 {
+  margin-top: 0;
+}
+.category-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.cards {
+  width: 20%;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+}
+.cards img {
+  padding: 20px;
+  width: 150px;
+}
+.cards p {
+  text-align: justify;
+  padding: 0 20px;
+  font-weight: normal;
+}
+.cards button {
+  margin-bottom: 10px;
+}
+
+/* end of section categories */
+
+/* section 3 protocol */
+.protocol {
+  width: 100%;
+  height: 100vh;
+  background: url("covid.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: 250px;
+}
+.protocol h1 {
+  font-size: 50px;
+  margin-top: 0;
+}
+.protocol h3 {
+  color: #6bb99c;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.protocol button {
+  background-color: #6bb99c;
+  text-transform: capitalize;
+  margin-top: 20px;
+}
+
+/* section 4 story */
+.story {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+}
+.story-1 {
+  width: 30%;
+  height: auto;
+}
+.story-2 {
+  width: 50%;
+  height: auto;
+}
+.story div img {
+  width: 100%;
+  height: auto;
+}
+.story h1 {
+  margin-top: 0;
+  font-size: 50px;
+}
+.story h3 {
+  color: #df581e;
+}
+.story p {
+  text-align: justify;
+}
+.story button {
+  margin-top: 20px;
+}
+
+/* ingredients section 5 */
+.ingredients h1 {
+  font-size: 40px;
+}
+.ingredients div img {
+  width: 100%;
+  height: auto;
+}
+.ingredients button {
+  background-color: #6bb99c;
+}
+
+/* section 6 chef */
+.chef {
+  background-color: #ffffff;
+  border-radius: 35px;
+}
+.chef h3 {
+  color: #6bb99c;
+}
+
+/* section 7 customer  */
+.customers {
+  width: 100;
+  height: 700px;
+  margin-top: 100px;
+  text-align: center;
+}
+.customers h1 {
+  margin-top: 0;
+  font-size: 40px;
+}
+.customers h3 {
+  color: #df581e;
+}
+.customer-cards {
+  margin-top: 70px;
+  margin-left: 10%;
+}
+.customercard {
+  width: 40%;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+  float: left;
+}
+.card-content {
+  width: 60%;
+}
+.customercard img {
+  width: 100px;
+  height: 100px;
+}
+.date {
+  color: rgba(106, 104, 104, 0.873);
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+.customercard h1 {
+  font-size: 25px;
+}
+.checked {
+  color: #df581e;
+}
+
+/* section 8 newsletter */
+.newsletter {
+  margin-top: 100px;
+  text-align: center;
+}
+.newsletter h1 {
+  margin-top: 0;
+  font-size: 30px;
+}
+.newsletter h3 {
+  color: #df581e;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.message input {
+  width: 30%;
+  border-radius: 20px;
+  text-align: left;
+  padding-left: 20px;
+  background-color: #ccc1a3;
+  border: none;
+  box-shadow: 1px 1px 1px white;
+}
+::placeholder {
+  font-size: 10px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.message input[placeholder="Message"] {
+  height: 100px;
+}
+.message button {
+  background-color: #6bb99c;
+  margin-top: 20px;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+  height: auto;
+  background-color: #fa9d30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding: 40px 40px;
+}
+.about {
+  width: 25%;
+}
+.whatwedo {
+  width: 25%;
+}
+.follow {
+  margin-top: 0;
+}
+footer h3 {
+  color: white;
+}
+footer ul li {
+  list-style: none;
+  padding: 10px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer .follow button {
+  background-color: transparent;
+  border: 1px solid black;
+  width: 300px;
+  margin: 50px 0;
+}
+.follow h3 {
+  font-size: 20px;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+}
+
+/* media queries */
+@media (max-width: 780px) {
+  body {
+    background-color: #ebe3cd;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: "Montserrat", sans-serif;
+  }
+  h1 {
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Playfair Display", serif;
+    margin-top: 100px;
+  }
+  h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+  p {
+    font-size: 12px;
+    margin: 10px 0;
+    font-weight: bold;
+    line-height: 20px;
+  }
+
+  .navbar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: #12202f;
+    border-radius: 80px;
+  }
+  .logo {
+    text-transform: capitalize;
+    margin-left: 30px;
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Playfair Display", serif;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 20px;
+  }
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  .sign-up {
+    margin-right: 30px;
+    color: #6bb99c;
+  }
+  .herotag {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-family: "Playfair Display", serif;
+    margin-top: 30px;
+  }
+  .hero {
+    width: 100%;
+    height: 350px;
+  }
+  .hero h3 {
+    display: none;
+  }
+  .hero p {
+    font-weight: bold;
+    line-height: 20px;
+  }
+  .herospan {
+    display: block;
+  }
+  .explore {
+    width: 170px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+    background-color: #df581e;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+  .seemenu {
+    font-weight: bold;
+    background: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+  }
+
+  .heroimg {
+    display: none;
+  }
+  .herotag {
+    width: 100%;
+  }
+
+  /* hero section style */
+
+  /* seat available */
+  .fa-solid {
+    margin-bottom: 10px;
+  }
+  .subhead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .availability {
+    width: 90%;
+    height: 150px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .time {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input {
+    width: 90%;
+    height: 40px;
+    background-color: #ebe3cd;
+    border: 1px solid rgb(64, 54, 54);
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .check-seat {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #6bb99c;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  /* section 3 protocol */
+  .protocol {
+    width: 100%;
+    height: 300px;
+    background: url("covid.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .protocol h1 {
+    font-size: 40px;
+    margin-top: 0px;
+  }
+  .protocol h3 {
+    font-size: 15px;
+    color: #6bb99c;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .protocol button {
+    background-color: #6bb99c;
+    text-transform: capitalize;
+    margin-top: 20px;
+  }
+
+  /* section categories */
+  .categories {
+    text-align: center;
+    margin-top: 70px;
+  }
+  .categories h3 {
+    color: #eaa73b;
+  }
+  .categories h1 {
+    font-size: 40px;
+    margin-top: 0;
+  }
+  .category-card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .cards {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+  }
+  .cards img {
+    padding: 20px;
+    width: 150px;
+  }
+  .cards p {
+    text-align: justify;
+    padding: 0 20px;
+    font-weight: normal;
+  }
+  .cards button {
+    margin-bottom: 10px;
+  }
+
+  /* section 4 story */
+  .story {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .story-1 {
+    width: 100%;
+    height: auto;
+  }
+  .story img {
+    display: none;
+  }
+
+  .story h1 {
+    margin-top: 0;
+    font-size: 40px;
+  }
+  .story h3 {
+    color: #df581e;
+  }
+  .story p {
+    text-align: justify;
+  }
+  .story button {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* section 6 chef */
+
+  /* section 7 customer  */
+  .customers {
+    height: auto;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .customers h1 {
+    margin-top: 0;
+    font-size: 30px;
+  }
+  .customers h3 {
+    color: #df581e;
+  }
+  .customer-cards {
+    margin-top: 20px;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .customers p {
+    text-align: justify;
+  }
+  .customercard {
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: none;
+  }
+  .card-content {
+    width: 80%;
+  }
+  .customercard img {
+    width: 100px;
+    height: 100px;
+  }
+  .date {
+    color: rgba(106, 104, 104, 0.873);
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+  }
+  .customercard h1 {
+    font-size: 20px;
+  }
+  .checked {
+    color: #df581e;
+  }
+
+  /* section 8 newsletter */
+  .newsletter {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .newsletter h1 {
+    margin-top: 0;
+    font-size: 30px;
+  }
+  .newsletter h3 {
+    color: #df581e;
+  }
+  .message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .message input {
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 20px;
+    background-color: #ccc1a3;
+    border: none;
+    box-shadow: 1px 1px 1px white;
+  }
+  ::placeholder {
+    font-size: 10px;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+  }
+  .message input[placeholder="Message"] {
+    height: 100px;
+  }
+  .message button {
+    background-color: #6bb99c;
+    margin-top: 20px;
+  }
+
+  /* footer */
+  footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: auto;
+    background-color: #fa9d30;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  .about {
+    width: 100%;
+  }
+  .whatwedo {
+    width: 100%;
+  }
+  footer .follow button {
+    margin: 20px 0;
+  }
+}
